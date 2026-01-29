@@ -44,56 +44,36 @@
 
 <body>
 
-
+  
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">[IEEE-IV 2026] D3VL: </h1>
+            <span class="publication-venue"> 2026 IEEE Intelligent Vehicles Symposium (IV)</span>
+            <h1 class="title is-2 publication-title">D3VL: Understanding Drive Scenes from 3D Time Series Data and Video with Language Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                Eyal Molad<sup>*,1</sup>,
+                <a href="https://sanghani.cs.vt.edu/people/students/heesang-han.html" target="_blank">Heesang Han</a><sup>1,3</sup>,
               </span>
               <span class="author-block">
-                <a href="https://horwitz.ai" target="_blank">Eliahu Horwitz</a><sup>*,1,2</sup>,
+                <a href="https://ece.vt.edu/people/profile/abbott.html" target="_blank">A. Lynn Abbott
+                  </a><sup>1,3</sup>,
               </span>
               <span class="author-block">
-                <a href="https://www.linkedin.com/in/dani-valevski-a3b5936/" target="_blank">Dani
-                  Valevski</a><sup>*,1</sup>,
+                <a href="https://www.vtti.vt.edu/staffdir/bio.php?&pn=119388" target="_blank">Abhijit Sarkar</a><sup>1,2,3</sup>,
               </span>
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/alexravacha" target="_blank">Alex Rav Acha</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                Yossi Matias<sup>1</sup>,
-              </span>
-              <span class="author-block">
-                Yael Pritch<sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://yanivle.github.io/" target="_blank">Yaniv Leviathan</a><sup>†,1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="http://www.cs.huji.ac.il/~ydidh" target="_blank">Yedid Hoshen</a><sup>†,1,2</sup>
-              </span>
+
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Google Research,</span>
-              <span class="author-block"><sup>2</sup>The Hebrew University of Jerusalem</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution, <sup>†</sup>Indicates Equal
-                  Advising</small></span>
-              <span class="eql-cntrb"><small></small></span>
+              <span class="author-block"><sup>1</sup>Virginia Tech,</span>
+              <span class="author-block"><sup>2</sup>Virginia Tech Transportation Institute</span>
+              <span Class="author-block"><sup>3</sup>Sanghani Center for Artificial Intelligence and Data Analytics</span>
             </div>
-
             <div class="column has-text-centered">
               <div class="publication-links">
-                <p>
-                  <strong>IEEE-IV 2026</strong>
-                </p>
-                
                 <!-- ArXiv PDF link -->
                 <span class="link-block">
                   <a href="https://arxiv.org/pdf/2302.01329.pdf" target="_blank"
@@ -121,7 +101,7 @@
                   <a href="https://github.com/heesangh/D3VL-and-WaymoQA" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fa-brands fa-square-github"></i>
+                      <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
@@ -132,7 +112,7 @@
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2302.01329" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
-                    <span>&#x1F917; HuggingFace</span>
+                    <span>&#x1F917; KITTI QA</span>
                   </a>
                 </span>
                 
@@ -141,20 +121,42 @@
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2302.01329" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
-                    <span>&#x1F917; HuggingFace</span>
+                    <span>&#x1F917; Waymo QA</span>
                   </a>
                 </span>
               </div>
             </div>
+
+            <div class="title is-5 publication-title">
+              [IEEE IV 2024] Semantic Understanding of Traffic Scenes with Large Vision Langauage Models
+            </div>
           </div>
         </div>
+        <div class="columns is-centered">
+          <span class="link-block">
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10588373" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-ieee"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+          <span class="link-block">
+                  <a href="https://github.com/sandeshrjain/lvlm-scene" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+        </div>
+
       </div>
     </div>
   </section>
-
-
-
-
 
 
 
@@ -216,21 +218,13 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Text-driven image and video diffusion models have recently achieved unprecedented generation realism.
-              While diffusion models have been successfully applied for image editing, very few works have done so for
-              video editing. We present the first diffusion-based method that is able to perform text-based motion and
-              appearance editing of general videos. Our approach uses a video diffusion model to combine, at inference
-              time, the low-resolution spatio-temporal information from the original video with new, high resolution
-              information that it synthesized to align with the guiding text-prompt. As obtaining high-fidelity to the
-              original video requires retaining some of its high-resolution information, we add a preliminary stage of
-              finetuning the model on the original video, significantly boosting fidelity. We propose to improve motion
-              editability by a new, mixed objective that jointly finetunes with full temporal attention and with
-              temporal attention masking. We further introduce a new framework for image animation. We first transform
-              the image into a coarse video by simple image processing operations such as replication and perspective
-              geometric projections, and then use our general video editor to animate it. As a further application, we
-              can use our method for subject-driven video generation. Extensive qualitative and numerical experiments
-              showcase the remarkable editing ability of our method and establish its superior performance compared to
-              baseline methods.
+              Recent advances in Multimodal Large Language Models (MLLMs) have triggered the development of end-to-end MLLMs for autonomous driving. However, the main emphasis to date has been
+              for MLLMs using 2D images and videos. In contrast, this paper considers MLLM effectiveness using 3D sensors, particularly LiDAR and stereo cameras.
+              LiDAR presents unique challenges to integration within an MLLM, largely because of data sparsity and lack of a grid structure for the data.
+              For similar reasons, fusion of camera and LiDAR data within an MLLM pipeline is also uncommon.
+              However, most autonomous systems rely on LiDAR-based sensing, and incorporating 3D data has been proven to improve performance in traditional 3D scene perception tasks.
+              This paper presents <i>D3VL</i>, a novel MLLM framework that integrates 2D and 3D time-series data in a single but simple architecture. The model aims to answer questions %from traffic scene understanding to safety.
+              involving traffic scene understanding and safety. <i>D3VL</i> shows an 11% improvement in the KITTI Question-Answering (QA) dataset compared to existing methods in processing 2D and 3D time-series data. This paper further introduces the Waymo QA dataset extension, which assesses models' capabilities in processing 3D and time-series data under diverse driving conditions.
             </p>
           </div>
         </div>
