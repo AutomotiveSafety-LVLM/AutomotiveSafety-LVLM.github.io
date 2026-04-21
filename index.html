@@ -2,79 +2,81 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="Given a video and a text prompt, Dreamix edits the video while maintaining fidelity to color, posture, object size and camera pose, resulting in a temporally consistent video.">
-  <meta property="og:title" content="Dreamix: Video Diffusion Models are General Video Editors" />
-  <meta property="og:description"
-        content="Given a video and a text prompt, Dreamix edits the video while maintaining fidelity to color, posture, object size and camera pose, resulting in a temporally consistent video." />
-  <meta property="og:url" content="https://dreamix-video-editing.github.io" />
-  <meta property="og:image" content="static/image/og_banner_image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+    <meta charset="utf-8">
+    <meta name="description"
+          content="Given a video and a text prompt, Dreamix edits the video while maintaining fidelity to color, posture, object size and camera pose, resulting in a temporally consistent video.">
+    <meta property="og:title" content="Dreamix: Video Diffusion Models are General Video Editors"/>
+    <meta property="og:description"
+          content="Given a video and a text prompt, Dreamix edits the video while maintaining fidelity to color, posture, object size and camera pose, resulting in a temporally consistent video."/>
+    <meta property="og:url" content="https://dreamix-video-editing.github.io"/>
+    <meta property="og:image" content="static/image/og_banner_image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="Dreamix: Video Diffusion Models are General Video Editors">
-  <meta name="twitter:description"
-        content="Given a video and a text prompt, Dreamix edits the video while maintaining fidelity to color, posture, object size and camera pose, resulting in a temporally consistent video.">
-  <meta name="twitter:image" content="static/images/twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="Video diffusion models, video editing, dreamix, dreambooth, imagen-video">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:title" content="Dreamix: Video Diffusion Models are General Video Editors">
+    <meta name="twitter:description"
+          content="Given a video and a text prompt, Dreamix edits the video while maintaining fidelity to color, posture, object size and camera pose, resulting in a temporally consistent video.">
+    <meta name="twitter:image" content="static/images/twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="keywords" content="Video diffusion models, video editing, dreamix, dreambooth, imagen-video">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>D3VL & WaymoQA</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <title>D3VL & WaymoQA</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
 </head>
 
 <body>
 
 
 <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <span class="publication-venue"> 2026 IEEE Intelligent Vehicles Symposium (IV)</span>
-          <h1 class="title is-2 publication-title">D3VL: Understanding Drive Scenes from 3D Time Series Data and Video with Language Models</h1>
-          <div class="is-size-5 publication-authors">
-            <!-- Paper authors -->
-            <span class="author-block">
-                <a href="https://sanghani.cs.vt.edu/people/students/heesang-han.html" target="_blank">Heesang Han</a><sup>1,3</sup>,
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <span class="publication-venue"> 2026 IEEE Intelligent Vehicles Symposium (IV)</span>
+                    <h1 class="title is-2 publication-title">D3VL: Understanding Drive Scenes from 3D Time Series Data
+                        and Video with Language Models</h1>
+                    <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                        <span class="author-block">
+                <a href="https://sanghani.cs.vt.edu/people/students/heesang-han.html"
+                   target="_blank">Heesang Han</a><sup>1,3</sup>,
               </span>
-            <span class="author-block">
+                        <span class="author-block">
                 <a href="https://ece.vt.edu/people/profile/abbott.html" target="_blank">A. Lynn Abbott
                   </a><sup>1,3</sup>,
               </span>
-            <span class="author-block">
+                        <span class="author-block">
                 <a href="https://www.vtti.vt.edu/staffdir/bio.php?&pn=119388" target="_blank">Abhijit Sarkar</a><sup>1,2,3</sup>,
               </span>
 
-          </div>
+                    </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Virginia Tech,</span>
-            <span class="author-block"><sup>2</sup>Virginia Tech Transportation Institute</span>
-            <span Class="author-block"><sup>3</sup>Sanghani Center for Artificial Intelligence and Data Analytics</span>
-          </div>
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- ArXiv PDF link -->
-              <span class="link-block">
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>Virginia Tech,</span>
+                        <span class="author-block"><sup>2</sup>Virginia Tech Transportation Institute</span>
+                        <span Class="author-block"><sup>3</sup>Sanghani Center for Artificial Intelligence and Data Analytics</span>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- ArXiv PDF link -->
+                            <span class="link-block">
                   <a href="https://arxiv.org/pdf/2302.01329.pdf" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -84,8 +86,8 @@
                   </a>
                 </span>
 
-              <!-- ArXiv abstract Link -->
-              <span class="link-block">
+                            <!-- ArXiv abstract Link -->
+                            <span class="link-block">
                   <a href="https://arxiv.org/abs/2302.01329" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -95,8 +97,8 @@
                   </a>
                 </span>
 
-              <!-- IEEE IV 2026 GitHub page -->
-              <span class="link-block">
+                            <!-- IEEE IV 2026 GitHub page -->
+                            <span class="link-block">
                   <a href="https://github.com/heesangh/D3VL-and-WaymoQA" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -106,57 +108,56 @@
                   </a>
                 </span>
 
-              <!--- KITTI QA HF page -->
-              <!-- ArXiv abstract Link -->
-              <span class="link-block">
+                            <!--- KITTI QA HF page -->
+                            <!-- ArXiv abstract Link -->
+                            <span class="link-block">
                   <a href="https://huggingface.co/datasets/heesang1/KITTI-QA" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                     <span>&#x1F917; KITTI QA</span>
                   </a>
                 </span>
 
-              <!--- Waymo QA HF page -->
-              <!-- ArXiv abstract Link -->
-              <span class="link-block">
+                            <!--- Waymo QA HF page -->
+                            <!-- ArXiv abstract Link -->
+                            <span class="link-block">
                   <a href="https://arxiv.org/abs/2302.01329" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                     <span>&#x1F917; Waymo QA</span>
                   </a>
                 </span>
+                        </div>
+                    </div>
+
+                    <!--          <div class="title is-5 publication-title">-->
+                    <!--            [IEEE IV 2024] Semantic Understanding of Traffic Scenes with Large Vision Langauage Models-->
+                    <!--          </div>-->
+                </div>
             </div>
-          </div>
+            <!--      <div class="columns is-centered">-->
+            <!--          <span class="link-block">-->
+            <!--                  <a href="https://ieeexplore.ieee.org/abstract/document/10588373" target="_blank"-->
+            <!--                     class="external-link button is-normal is-rounded is-dark">-->
+            <!--                    <span class="icon">-->
+            <!--                      <i class="ai ai-ieee"></i>-->
+            <!--                    </span>-->
+            <!--                    <span>Paper</span>-->
+            <!--                  </a>-->
+            <!--                </span>-->
+            <!--        <span class="link-block">-->
+            <!--                  <a href="https://github.com/sandeshrjain/lvlm-scene" target="_blank"-->
+            <!--                     class="external-link button is-normal is-rounded is-dark">-->
+            <!--                    <span class="icon">-->
+            <!--                      <i class="fab fa-github"></i>-->
+            <!--                    </span>-->
+            <!--                    <span>Code</span>-->
+            <!--                  </a>-->
+            <!--                </span>-->
 
-<!--          <div class="title is-5 publication-title">-->
-<!--            [IEEE IV 2024] Semantic Understanding of Traffic Scenes with Large Vision Langauage Models-->
-<!--          </div>-->
+            <!--      </div>-->
+
         </div>
-      </div>
-<!--      <div class="columns is-centered">-->
-<!--          <span class="link-block">-->
-<!--                  <a href="https://ieeexplore.ieee.org/abstract/document/10588373" target="_blank"-->
-<!--                     class="external-link button is-normal is-rounded is-dark">-->
-<!--                    <span class="icon">-->
-<!--                      <i class="ai ai-ieee"></i>-->
-<!--                    </span>-->
-<!--                    <span>Paper</span>-->
-<!--                  </a>-->
-<!--                </span>-->
-<!--        <span class="link-block">-->
-<!--                  <a href="https://github.com/sandeshrjain/lvlm-scene" target="_blank"-->
-<!--                     class="external-link button is-normal is-rounded is-dark">-->
-<!--                    <span class="icon">-->
-<!--                      <i class="fab fa-github"></i>-->
-<!--                    </span>-->
-<!--                    <span>Code</span>-->
-<!--                  </a>-->
-<!--                </span>-->
-
-<!--      </div>-->
-
     </div>
-  </div>
 </section>
-
 
 
 <!-- Subject Driven Video Generation carousel -->
@@ -203,51 +204,117 @@
 <!--&lt;!&ndash; End Subject Driven Video Generation carousel &ndash;&gt;-->
 
 <section class="section hero is-small">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="content">
-<!--          <h2 class="title is-3">Method Overview: </h2>-->
-          <center>
-            <img src="static/images/arch.jpg" alt="Mixed Video-Image Finetuning"
-                 class="center-image blend-img-background" />
-          </center>
-          <div class="level-set has-text-justified">
-            <p>
-              P is LiDAR-to-Camera projection as in algorithm 1. ε is a transformer vision encoder
-              in an MLLM, projector is vision-language projector, T is text tokenizer, and LLM is foundational LLM decoder, such as
-              Qwen-2.5.
-            </p>
-          </div>
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <!--          <h2 class="title is-3">Method Overview: </h2>-->
+                    <center>
+                        <img src="static/images/arch.jpg" alt="Mixed Video-Image Finetuning"
+                             class="center-image blend-img-background"/>
+                    </center>
+                    <div class="level-set has-text-justified">
+                        <p>
+                            D3VL is a lightweight framework to process 3D data with Large Language Model using projections.
+                            Projection P firs
+
+                            P is LiDAR-to-Camera projection as in algorithm 1. ε is a transformer vision encoder
+                            in an MLLM, projector is vision-language projector, T is text tokenizer, and LLM is
+                            foundational LLM decoder, such as
+                            Qwen-2.5.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Recent advances in Multimodal Large Language Models (MLLMs) have triggered the development of end-to-end MLLMs for autonomous driving. However, the main emphasis to date has been
-            for MLLMs using 2D images and videos. In contrast, this paper considers MLLM effectiveness using 3D sensors, particularly LiDAR and stereo cameras.
-            LiDAR presents unique challenges to integration within an MLLM, largely because of data sparsity and lack of a grid structure for the data.
-            For similar reasons, fusion of camera and LiDAR data within an MLLM pipeline is also uncommon.
-            However, most autonomous systems rely on LiDAR-based sensing, and incorporating 3D data has been proven to improve performance in traditional 3D scene perception tasks.
-            This paper presents <i>D3VL</i>, a novel MLLM framework that integrates 2D and 3D time-series data in a single but simple architecture. The model aims to answer questions %from traffic scene understanding to safety.
-            involving traffic scene understanding and safety. <i>D3VL</i> shows an 11% improvement in the KITTI Question-Answering (QA) dataset compared to existing methods in processing 2D and 3D time-series data. This paper further introduces the Waymo QA dataset extension, which assesses models' capabilities in processing 3D and time-series data under diverse driving conditions.
-          </p>
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Recent advances in Multimodal Large Language Models (MLLMs) have triggered the development of
+                        end-to-end MLLMs for autonomous driving. However, the main emphasis to date has been
+                        for MLLMs using 2D images and videos. In contrast, this paper considers MLLM effectiveness using
+                        3D sensors, particularly LiDAR and stereo cameras.
+                        LiDAR presents unique challenges to integration within an MLLM, largely because of data sparsity
+                        and lack of a grid structure for the data.
+                        For similar reasons, fusion of camera and LiDAR data within an MLLM pipeline is also uncommon.
+                        However, most autonomous systems rely on LiDAR-based sensing, and incorporating 3D data has been
+                        proven to improve performance in traditional 3D scene perception tasks.
+                        This paper presents <i>D3VL</i>, a novel MLLM framework that integrates 2D and 3D time-series
+                        data in a single but simple architecture. The model aims to answer questions %from traffic scene
+                        understanding to safety.
+                        involving traffic scene understanding and safety. <i>D3VL</i> shows an 11% improvement in the
+                        KITTI Question-Answering (QA) dataset compared to existing methods in processing 2D and 3D
+                        time-series data. This paper further introduces the Waymo QA dataset extension, which assesses
+                        models' capabilities in processing 3D and time-series data under diverse driving conditions.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 <!-- End paper abstract -->
 
+<section class="section is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <h2 class="title is-3">Benchmarks</h2>
+                    <center>
+                        <img src="static/images/architecture_applications_extended.png" alt="Inference Overview"
+                             class="center-image"/>
+                    </center>
+                    <div class="level-set has-text-justified">
+                        <p>
+                            Our method supports multiple applications by application dependent pre-processing (left),
+                            converting the
+                            input content into a uniform video format. For image-to-video, the input image is duplicated
+                            and
+                            transformed using perspective transformations, synthesizing a coarse video with some camera
+                            motion. For
+                            subject driven video generation, the input is omitted - finetuning alone take care of the
+                            fidelity.
+                            This coarse video is then edited using our general ``Dreamix Video Editor`` (right): we
+                            first corrupt
+                            the video by downsampling followed by adding noise. We then apply the finetuned text-guided
+                            video
+                            diffusion model, which upscales the video to the final spatio-temporal resolution
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <h2 class="title is-3">Benchmarks</h2>
+                    <h2 class="title is-5">KITTI-QA</h2>
+                    <img src="static/images/kitti-benchmark.svg" width="100%" height="auto" alt="kitti-table" class="center-image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section is-small">
+
+
+</section>
 
 <!--&lt;!&ndash; Vid2vid carousel &ndash;&gt;-->
 <!--<section class="hero is-small">-->
@@ -466,10 +533,6 @@
 <!--&lt;!&ndash; End Subject Driven Video Generation carousel &ndash;&gt;-->
 
 
-
-
-
-
 <!--<section class="section is-small">-->
 <!--  <div class="container is-max-desktop">-->
 <!--    <div class="columns is-centered">-->
@@ -498,7 +561,6 @@
 <!--</section>-->
 
 
-
 <!--&lt;!&ndash; Youtube video &ndash;&gt;-->
 <!--<section class="hero is-small is-light">-->
 <!--  <div class="hero-body">-->
@@ -521,18 +583,17 @@
 <!--&lt;!&ndash; End youtube video &ndash;&gt;-->
 
 
-
 <!--BibTex citation -->
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{han2026d3vl,
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{han2026d3vl,
   title={D3VL: Understanding Drive Scenes from 3D Time Series Data and Video with Language Models},
   author={Han, Heesang and Abbott, A. Lynn and Sarkar, Abhijit},
   journal={2026 IEEE Intelligent Vehicle Symposium (IV)},
   year={2026}
 }</code></pre>
-  </div>
+    </div>
 </section>
 <!-- End BibTex citation -->
 
@@ -564,39 +625,41 @@
 
 <!--Acknowledgements -->
 <section class="section" id="Acknowledgements">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Acknowledgements</h2>
-    We thank Joe
+    <div class="container is-max-desktop content">
+        <h2 class="title">Acknowledgements</h2>
+        We thank Joe
 
-    Ely Sarig for creating the video, Jay Tenenbaum for the video narration, Amir Hertz for the
-    implementation of our eval baseline, Daniel Cohen-Or, Assaf Zomet, Eyal Segalis, Matan Kalman and Emily Denton for
-    their valuable inputs that helped improve this work.
-  </div>
+        Ely Sarig for creating the video, Jay Tenenbaum for the video narration, Amir Hertz for the
+        implementation of our eval baseline, Daniel Cohen-Or, Assaf Zomet, Eyal Segalis, Matan Kalman and Emily Denton
+        for
+        their valuable inputs that helped improve this work.
+    </div>
 </section>
 <!--End Acknowledgements -->
 
 
-
-
 <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                                             target="_blank">Academic Project Page Template</a>.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer.
-            <br> This website is licensed under a <a rel="license"
-                                                     href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+                    <p>
+                        This page was built using the <a
+                            href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                            target="_blank">Academic Project Page Template</a>.
+                        You are free to borrow the of this website, we just ask that you link back to this page in the
+                        footer.
+                        <br> This website is licensed under a <a rel="license"
+                                                                 href="https://creativecommons.org/licenses/by-sa/4.0/"
+                                                                 target="_blank">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
 
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </footer>
 
 <!-- Statcounter tracking code -->
@@ -604,15 +667,15 @@
 <!-- Default Statcounter code for Dreamix
 https://dreamix-video-editing.github.io -->
 <script type="text/javascript">
-  var sc_project = 12843789;
-  var sc_invisible = 1;
-  var sc_security = "e9c3bf5f";
+    var sc_project = 12843789;
+    var sc_invisible = 1;
+    var sc_security = "e9c3bf5f";
 </script>
 <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
 <noscript>
-  <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
-          class="statcounter" src="https://c.statcounter.com/12843789/0/e9c3bf5f/1/" alt="Web Analytics"
-          referrerPolicy="no-referrer-when-downgrade"></a></div>
+    <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+            class="statcounter" src="https://c.statcounter.com/12843789/0/e9c3bf5f/1/" alt="Web Analytics"
+            referrerPolicy="no-referrer-when-downgrade"></a></div>
 </noscript>
 
 <!-- End of Statcounter Code -->
