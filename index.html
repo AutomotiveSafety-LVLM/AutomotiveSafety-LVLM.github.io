@@ -215,13 +215,12 @@
                     </center>
                     <div class="level-set has-text-justified">
                         <p>
-                            D3VL is a lightweight framework to process 3D data with Large Language Model using projections.
-                            Projection P firs
-
-                            P is LiDAR-to-Camera projection as in algorithm 1. ε is a transformer vision encoder
-                            in an MLLM, projector is vision-language projector, T is text tokenizer, and LLM is
-                            foundational LLM decoder, such as
-                            Qwen-2.5.
+                            D3VL is a Multimodal Large Language Model (MLLM) framework designed to enhance an autonomous
+                            vehicle's understanding of driving scenes by combining 2D camera images with 3D time-series data.
+                            By processing 3D data as depth images, D3VL is able to efficiently pass spatial information directly through standard vision encoders.
+                            Through fine-tuning, the vision encoder and vision-language projector specifically learn how to effectively encode these depth images,
+                            while the backbone LLM learns how to decode them. <br><br>
+                            P: Projection, E: Vision Encoder, T: Text Tokenizer, LM: Foundational LLM Decoder
                         </p>
                     </div>
                 </div>
@@ -267,28 +266,7 @@
         <div class="columns is-centered">
             <div class="column is-full">
                 <div class="content">
-                    <h2 class="title is-3">Benchmarks</h2>
-                    <center>
-                        <img src="static/images/architecture_applications_extended.png" alt="Inference Overview"
-                             class="center-image"/>
-                    </center>
-                    <div class="level-set has-text-justified">
-                        <p>
-                            Our method supports multiple applications by application dependent pre-processing (left),
-                            converting the
-                            input content into a uniform video format. For image-to-video, the input image is duplicated
-                            and
-                            transformed using perspective transformations, synthesizing a coarse video with some camera
-                            motion. For
-                            subject driven video generation, the input is omitted - finetuning alone take care of the
-                            fidelity.
-                            This coarse video is then edited using our general ``Dreamix Video Editor`` (right): we
-                            first corrupt
-                            the video by downsampling followed by adding noise. We then apply the finetuned text-guided
-                            video
-                            diffusion model, which upscales the video to the final spatio-temporal resolution
-                        </p>
-                    </div>
+                    <h2 class="title is-3">KITTI QA</h2>
                 </div>
             </div>
         </div>
@@ -300,9 +278,7 @@
         <div class="columns is-centered">
             <div class="column is-full">
                 <div class="content">
-                    <h2 class="title is-3">Benchmarks</h2>
-                    <h2 class="title is-5">KITTI-QA</h2>
-                    <img src="static/images/kitti-benchmark.svg" width="100%" height="auto" alt="kitti-table" class="center-image" />
+                    <h2 class="title is-3">Waymo QA</h2>
                 </div>
             </div>
         </div>
@@ -310,11 +286,23 @@
 </section>
 
 
-
+<!--BENCHMARK-->
 <section class="section is-small">
-
-
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <h2 class="title is-3">Benchmarks</h2>
+                    <h2 class="title is-5">KITTI-QA</h2>
+                    <img src="static/images/kitti-benchmark.svg" width="100%" height="auto" alt="kitti-table" class="center-image" />
+                    <h2 class="title is-5">Waymo-QA</h2>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+
 
 <!--&lt;!&ndash; Vid2vid carousel &ndash;&gt;-->
 <!--<section class="hero is-small">-->
@@ -627,12 +615,9 @@
 <section class="section" id="Acknowledgements">
     <div class="container is-max-desktop content">
         <h2 class="title">Acknowledgements</h2>
-        We thank Joe
 
-        Ely Sarig for creating the video, Jay Tenenbaum for the video narration, Amir Hertz for the
-        implementation of our eval baseline, Daniel Cohen-Or, Assaf Zomet, Eyal Segalis, Matan Kalman and Emily Denton
-        for
-        their valuable inputs that helped improve this work.
+        <!-- #TODO -->
+
     </div>
 </section>
 <!--End Acknowledgements -->
