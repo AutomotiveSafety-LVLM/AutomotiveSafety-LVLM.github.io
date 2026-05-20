@@ -86,27 +86,17 @@
                   </a>
                 </span>
 
-                            <!-- ArXiv abstract Link -->
-                            <span class="link-block">
-                  <a href="https://arxiv.org/abs/2302.01329" target="_blank"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
+                            <!--                            &lt;!&ndash; ArXiv abstract Link &ndash;&gt;-->
+                            <!--                            <span class="link-block">-->
+                            <!--                  <a href="https://arxiv.org/abs/2302.01329" target="_blank"-->
+                            <!--                     class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                    <span class="icon">-->
+                            <!--                      <i class="ai ai-arxiv"></i>-->
+                            <!--                    </span>-->
+                            <!--                    <span>arXiv</span>-->
+                            <!--                  </a>-->
+                            <!--                </span>-->
 
-                            <!-- IEEE IV 2026 GitHub page -->
-                            <span class="link-block">
-                  <a href="https://github.com/heesangh/D3VL-and-WaymoQA" target="_blank"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
 
                             <!--- KITTI QA HF page -->
                             <!-- ArXiv abstract Link -->
@@ -125,6 +115,18 @@
                     <span>&#x1F917; Waymo QA</span>
                   </a>
                 </span>
+                            <!-- IEEE IV 2026 GitHub page -->
+                            <span class="link-block">
+                  <a href="https://github.com/heesangh/D3VL-and-WaymoQA" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+
                         </div>
                     </div>
 
@@ -216,9 +218,12 @@
                     <div class="level-set has-text-justified">
                         <p>
                             D3VL is a Multimodal Large Language Model (MLLM) framework designed to enhance an autonomous
-                            vehicle's understanding of driving scenes by combining 2D camera images with 3D time-series data.
-                            By processing 3D data as depth images, D3VL is able to efficiently pass spatial information directly through standard vision encoders.
-                            Through fine-tuning, the vision encoder and vision-language projector specifically learn how to effectively encode these depth images,
+                            vehicle's understanding of driving scenes by combining 2D camera images with 3D time-series
+                            data.
+                            By processing 3D data as depth images, D3VL is able to efficiently pass spatial information
+                            directly through standard vision encoders.
+                            Through fine-tuning, the vision encoder and vision-language projector specifically learn how
+                            to effectively encode these depth images,
                             while the backbone LLM learns how to decode them. <br><br>
                             P: Projection, E: Vision Encoder, T: Text Tokenizer, LM: Foundational LLM Decoder
                         </p>
@@ -268,6 +273,85 @@
                 <div class="content">
                     <h2 class="title is-3">KITTI QA</h2>
                 </div>
+                <div class="content">
+                    <!--KITTI Questions-->
+                    <details style="line-height: 1.5">
+                        <summary><b style="font-size: 16px">See list of the question-answer pairs</b></summary>
+                        <br>
+                        <details style="margin-left: 1rem; margin-bottom: 1rem">
+                            <summary><b>Road Infrastructure</b></summary>
+
+                            <ul style="list-style-type: disc; margin-left: 2rem">
+                                <li>Are there any obstructions on the road, such as debris or fallen objects?</li>
+                                <li>Are there any road barriers or blockades in the overall scene?</li>
+                                <li>Are there any visible road detours or diversions?</li>
+                                <li>Are there any visible road dividers or medians?</li>
+                                <li>Are there any work zones in the vicinity?</li>
+                                <li>Are there proper road markings indicating lanes?</li>
+                                <li>Are there proper road signs indicating turns and intersections?</li>
+                                <li>Are there proper warning signs for curves or bends in the road?</li>
+                                <li>Does the ego vehicle adjust speed when approaching a construction zone?</li>
+                                <li>Is the road condition safe to drive in terms of potholes?</li>
+                                <li>Is there a potential for a collision between the ego vehicle and any other object in the
+                                    scene?
+                                </li>
+                                <li>Is there a visible shoulder or emergency lane on the road?</li>
+                                <li>Is there a visible speed bump or hump on the road?</li>
+                                <li>Is the road surface smooth?</li>
+                            </ul>
+                        </details>
+                        <details style="margin-left: 1rem; margin-bottom: 1rem">
+                            <summary><b>Vulnerable Road Users</b></summary>
+                            <ul style="list-style-type: disc; margin-left: 2rem">
+                                <li>Are there any cyclists on the road?</li>
+                                <li>Are there any pedestrians present on the road?</li>
+                                <li>Are you in a low-speed limit area speed limit with pedestrians on the street, school
+                                    zones, or residential neighborhoods?
+                                </li>
+                                <li>Is there a designated bicycle lane?</li>
+                                <li>Is there a designated pedestrian crossing?</li>
+                                <li>When approaching a crosswalk, did the ego-vehicle slow down and prepare to stop, as
+                                    recommended for pedestrian safety?
+                                </li>
+
+                            </ul>
+                        </details>
+                        <details style="margin-left: 1rem; margin-bottom: 1rem">
+                            <summary><b>Human Factors & Driver Behavior</b></summary>
+                            <ul style="list-style-type: disc; margin-left: 2rem">
+                                <li>Are there any erratic lane changing behavior?</li>
+                                <li>Does the ego vehicle follow traffic signals and signs appropriately?</li>
+                                <li>Does the ego vehicle interact with emergency vehicles with lights and sirens?</li>
+                                <li>Is the driver's current trajectory putting them at risk of a near miss or accident?</li>
+                                <li>Is the ego vehicle aware of and reacts to school/hospital/vulnerable zones?</li>
+                                <li>Is the ego vehicle driving within its lane?</li>
+                                <li>Is the ego-vehicle driving (too) fast compared to other traffic?</li>
+                                <li>Is the ego-vehicle driving (too) slow compared to other traffic?</li>
+                            </ul>
+                        </details>
+                        <details style="margin-left: 1rem; margin-bottom: 1rem">
+                            <summary><b>Other Environmental Factors</b></summary>
+                            <ul style="list-style-type: disc; margin-left: 2rem">
+                                <li>Are there any emergency vehicles with lights or sirens?</li>
+                                <li>Are there any visible road maintenance vehicles?</li>
+                                <li>Are there instances where ego vehicle is following too closely or engaging in tailgating
+                                    behaviors?
+                                </li>
+                                <li>Does the ego vehicle give way to other vehicles when required?</li>
+                                <li>Is there a large vehicle (like truck, bus etc) in the vicinity?</li>
+                                <li>Are there any animals on the road?</li>
+                                <li>Are there any roadway obstructions or wildlife that could be dangerous?</li>
+                                <li>Are there any visible fire hydrants along the road?</li>
+                                <li>Are there any visible fuel stations along the road?</li>
+                                <li>Are there any visible police officers directing traffic?</li>
+                                <li>Are there any visible road-side distractions (e.g., billboards)?</li>
+                                <li>Is it raining in the video?</li>
+                            </ul>
+                        </details>
+
+                        *: 3D info significantly accuracy
+                    </details>
+                </div>
             </div>
         </div>
     </div>
@@ -280,6 +364,108 @@
                 <div class="content">
                     <h2 class="title is-3">Waymo QA</h2>
                 </div>
+
+                <div class="content">
+                    <details style="line-height: 1.5">
+                        <summary><b>See list of the question-answer pairs</b></summary>
+                        <br>
+                        <details style="margin-left: 1rem; margin-bottom: 1rem">
+                            <summary><b>Environment</b></summary>
+                            <ul style="list-style-type: disc; margin-left: 2rem">
+                                <li>Are there any obstructions on the road, such as debris or fallen objects?</li>
+                                <li>Are there any road barriers or blockades in the overall scene?</li>
+                                <li>Are there any visible road detours or diversions?</li>
+                                <li>Are there any visible road dividers or medians?</li>
+                                <li>Are there any work zones in the vicinity?</li>
+                                <li>Are there proper road markings indicating lanes?</li>
+                                <li>Are there proper road signs indicating turns and intersections?</li>
+                                <li>How is the road surface? (paved smoothly, paved with cracks, paved with dips, unpaved)</li>
+                                <li>Is the road bent or curved? (yes to the right, yes to the left, yes to both left and right, no)</li>
+                                <li>Are there any potholes on the road?</li>
+                                <li>Is there a visible shoulder or emergency lane on the road?</li>
+                                <li>Is there a visible speed bump on the road?</li>
+                                <li>Is there left-turn only lane, right-turn only lane, or straight only lane?</li>
+                                <li>Is there a bike lane?</li>
+                                <li>Is there a bike lane right next to ego vehicle?</li>
+                                <li>Is there a visible pedestrian crossing?</li>
+                                <li>Has the ego vehicle passed the pedestrian crossing?</li>
+                                <li>What is the general weather condition in the video? (clear, rainy, snowy, foggy)</li>
+                                <li>What time of the day is it? (day, evening/morning, night)</li>
+                                <li>Are there any visible fire hydrants along the road?</li>
+                                <li>Overall, is the road condition safe to drive?</li>
+                                <li>What environment is ego vehicle in? (Residential, Urban, Freeway, other)</li>
+                            </ul>
+                        </details>
+
+                        <details style="margin-left: 1rem; margin-bottom: 1rem">
+                            <summary><b>Traffic Signs and Signals</b></summary>
+                            <ul style="list-style-type: disc; margin-left: 2rem">
+                                <li>Are there any traffic signs?</li>
+                                <li>Are there any stop signs or do not enter signs?</li>
+                                <li>Are there any pedestrian crossing signs?</li>
+                                <li>Are there any do not turn left or do not turn right signs?</li>
+                                <li>Are there any speed limit signs?</li>
+                                <li>Are there any traffic signs except stop, do not enter, pedestrian crossing, do not turn left or right, or speed limit?</li>
+                                <li>What is the value of the first speed limit sign it sees? (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, other, not applicable)</li>
+                                <li>Are there any traffic lights?</li>
+                                <li>Which light was on the last traffic light that ego vehicle passed? (red, yellow, green, green arrow, not applicable)</li>
+                            </ul>
+                        </details>
+
+                        <details style="margin-left: 1rem; margin-bottom: 1rem">
+                            <summary><b>Moving Objects</b></summary>
+                            <ul style="list-style-type: disc; margin-left: 2rem">
+                                <li>Are there any cyclists on the road?</li>
+                                <li>Are there any cyclists on the path of the ego vehicle?</li>
+                                <li>Are there any pedestrians?</li>
+                                <li>Are there any pedestrians on the crosswalk or the road?</li>
+                                <li>Are there any pedestrians moving/walking?</li>
+                                <li>Are there any pedestrians on the path of the ego vehicle?</li>
+                                <li>Are there any objects other than cars, cyclists, or pedestrians on the path of the ego vehicle?</li>
+                                <li>Are there any moving objects other than cars, cyclists, or pedestrians?</li>
+                                <li>Is the ego vehicle inside the school zone?</li>
+                                <li>Are there any emergency vehicles?</li>
+                                <li>Are there any emergency vehicles with lights or sirens?</li>
+                                <li>Are there any emergency vehicles in the left or right lane of the ego vehicle?</li>
+                                <li>Are there any emergency vehicles in front of the ego vehicle?</li>
+                                <li>Are there any construction vehicles?</li>
+                                <li>Are there any passenger buses?</li>
+                                <li>Are there any trucks?</li>
+                                <li>Are there any trucks or tractor-and-trailers significantly slower in velocity or acceleration than other traffics?</li>
+                                <li>Does the ego vehicle accelerate over time?</li>
+                                <li>Does the ego vehicle decelerate over time?</li>
+                                <li>Does any vehicle near the ego vehicle accelerate over time?</li>
+                                <li>Does any vehicle near the ego vehicle decelerate over time?</li>
+                                <li>Does any vehicle near the ego vehicle accelerate in a reckless manner?</li>
+                                <li>Does any vehicle near the ego vehicle decelerate in a reckless manner?</li>
+                                <li>Does any vehicle near the ego vehicle change lanes in a reckless manner?</li>
+                                <li>Are there any moving vehicles within two car lengths from the ego vehicle?</li>
+                                <li>Is there a potential for collision between the ego vehicle and any other object in the scene? Answer yes if there is more than 0% of chance. (yes with another car or cyclist, yes with pedestrians, yes with static objects, no)</li>
+                                <li>Is it safe for the ego vehicle to lane change left? Is there enough space in the left lane for the ego vehicle?</li>
+                                <li>Is it safe for the ego vehicle to lane change right? Is there enough space in the right lane for the ego vehicle?</li>
+                            </ul>
+                        </details>
+
+                        <details style="margin-left: 1rem; margin-bottom: 1rem">
+                            <summary><b>Safety & Planning</b></summary>
+
+                            <ul style="list-style-type: disc; margin-left: 2rem">
+                                <li>Is the ego-vehicle driving (too) slow compared to other traffic?</li>
+                                <li>Should the ego vehicle speed up?</li>
+                                <li>Should the ego vehicle speed down?</li>
+                                <li>Should the ego vehicle stop?</li>
+                                <li>Should the ego vehicle change lanes?</li>
+                            </ul>
+                        </details>
+                    </details>
+
+                </div>
+
+
+
+
+
+
             </div>
         </div>
     </div>
@@ -294,14 +480,14 @@
                 <div class="content">
                     <h2 class="title is-3">Benchmarks</h2>
                     <h2 class="title is-5">KITTI-QA</h2>
-                    <img src="static/images/kitti-benchmark.svg" width="100%" height="auto" alt="kitti-table" class="center-image" />
+                    <img src="static/images/kitti-benchmark.svg" width="100%" height="auto" alt="kitti-table"
+                         class="center-image"/>
                     <h2 class="title is-5">Waymo-QA</h2>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 
 <!--&lt;!&ndash; Vid2vid carousel &ndash;&gt;-->
