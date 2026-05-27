@@ -292,7 +292,8 @@
                                 <li>Are there proper warning signs for curves or bends in the road?</li>
                                 <li>Does the ego vehicle adjust speed when approaching a construction zone?</li>
                                 <li>Is the road condition safe to drive in terms of potholes?</li>
-                                <li>Is there a potential for a collision between the ego vehicle and any other object in the
+                                <li>Is there a potential for a collision between the ego vehicle and any other object in
+                                    the
                                     scene?
                                 </li>
                                 <li>Is there a visible shoulder or emergency lane on the road?</li>
@@ -322,7 +323,9 @@
                                 <li>Are there any erratic lane changing behavior?</li>
                                 <li>Does the ego vehicle follow traffic signals and signs appropriately?</li>
                                 <li>Does the ego vehicle interact with emergency vehicles with lights and sirens?</li>
-                                <li>Is the driver's current trajectory putting them at risk of a near miss or accident?</li>
+                                <li>Is the driver's current trajectory putting them at risk of a near miss or
+                                    accident?
+                                </li>
                                 <li>Is the ego vehicle aware of and reacts to school/hospital/vulnerable zones?</li>
                                 <li>Is the ego vehicle driving within its lane?</li>
                                 <li>Is the ego-vehicle driving (too) fast compared to other traffic?</li>
@@ -334,7 +337,8 @@
                             <ul style="list-style-type: disc; margin-left: 2rem">
                                 <li>Are there any emergency vehicles with lights or sirens?</li>
                                 <li>Are there any visible road maintenance vehicles?</li>
-                                <li>Are there instances where ego vehicle is following too closely or engaging in tailgating
+                                <li>Are there instances where ego vehicle is following too closely or engaging in
+                                    tailgating
                                     behaviors?
                                 </li>
                                 <li>Does the ego vehicle give way to other vehicles when required?</li>
@@ -362,9 +366,73 @@
         <div class="columns is-centered">
             <div class="column is-full">
                 <div class="content">
-                    <h2 class="title is-3">Waymo QA</h2>
+                                        <h2 class="title is-3">Waymo QA</h2>
                 </div>
 
+                <!-- Subject Driven Video Generation carousel -->
+
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-video1">
+                        <div class="row" style="margin-bottom: 10rem">
+                            <div class="columns">
+                                <img src="static/images/waymo1.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene1-camera">
+                                <img src="static/images/waymo2.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene1-lidar">
+                            </div>
+                        </div>
+                        <h2 class="subtitle has-text-centered">
+                            Waymo Open Dataset (WOD) features diverse scenes, including rural area.
+                        </h2>
+                        <br>
+                    </div>
+
+                    <div class="item item-video2">
+                        <div class="row" style="margin-bottom: 10rem">
+                            <div class="columns">
+                                <img src="static/images/waymo3.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene2-camera">
+                                <img src="static/images/waymo4.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene2-lidar">
+                            </div>
+                        </div>
+
+                        <h2 class="subtitle has-text-centered">
+                            Waymo Open Dataset (WOD) features diverse scenes, including raining scenes
+
+                        </h2>
+                    </div>
+                    <div class="item item-video3">
+                        <div class="row" style="margin-bottom: 10rem">
+                            <div class="columns">
+                                <img src="static/images/waymo5.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene3-camera">
+                                <img src="static/images/waymo6.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene3-lidar">
+                            </div>
+                        </div>
+                        <h2 class="subtitle has-text-centered">
+                            Waymo Open Dataset (WOD) features diverse scenes, including complex urban scenes
+                        </h2>
+                    </div>
+
+                    <div class="item item-video4">
+                        <div class="row" style="margin-bottom: 10rem">
+                            <div class="columns">
+                                <img src="static/images/waymo7.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene4-camera">
+                                <img src="static/images/waymo8.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene4-lidar">
+                            </div>
+                        </div>
+                        <h2 class="subtitle has-text-centered">
+                            Waymo Open Dataset (WOD) features diverse scenes, including complex night scenes.
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- End Subject Driven Video Generation carousel -->
+                <br>
                 <div class="content">
                     <details style="line-height: 1.5">
                         <summary><b>See list of the question-answer pairs</b></summary>
@@ -379,8 +447,12 @@
                                 <li>Are there any work zones in the vicinity?</li>
                                 <li>Are there proper road markings indicating lanes?</li>
                                 <li>Are there proper road signs indicating turns and intersections?</li>
-                                <li>How is the road surface? (paved smoothly, paved with cracks, paved with dips, unpaved)</li>
-                                <li>Is the road bent or curved? (yes to the right, yes to the left, yes to both left and right, no)</li>
+                                <li>How is the road surface? (paved smoothly, paved with cracks, paved with dips,
+                                    unpaved)
+                                </li>
+                                <li>Is the road bent or curved? (yes to the right, yes to the left, yes to both left and
+                                    right, no)
+                                </li>
                                 <li>Are there any potholes on the road?</li>
                                 <li>Is there a visible shoulder or emergency lane on the road?</li>
                                 <li>Is there a visible speed bump on the road?</li>
@@ -389,7 +461,8 @@
                                 <li>Is there a bike lane right next to ego vehicle?</li>
                                 <li>Is there a visible pedestrian crossing?</li>
                                 <li>Has the ego vehicle passed the pedestrian crossing?</li>
-                                <li>What is the general weather condition in the video? (clear, rainy, snowy, foggy)</li>
+                                <li>What is the general weather condition in the video? (clear, rainy, snowy, foggy)
+                                </li>
                                 <li>What time of the day is it? (day, evening/morning, night)</li>
                                 <li>Are there any visible fire hydrants along the road?</li>
                                 <li>Overall, is the road condition safe to drive?</li>
@@ -405,10 +478,16 @@
                                 <li>Are there any pedestrian crossing signs?</li>
                                 <li>Are there any do not turn left or do not turn right signs?</li>
                                 <li>Are there any speed limit signs?</li>
-                                <li>Are there any traffic signs except stop, do not enter, pedestrian crossing, do not turn left or right, or speed limit?</li>
-                                <li>What is the value of the first speed limit sign it sees? (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, other, not applicable)</li>
+                                <li>Are there any traffic signs except stop, do not enter, pedestrian crossing, do not
+                                    turn left or right, or speed limit?
+                                </li>
+                                <li>What is the value of the first speed limit sign it sees? (5, 10, 15, 20, 25, 30, 35,
+                                    40, 45, 50, 55, 60, 65, 70, other, not applicable)
+                                </li>
                                 <li>Are there any traffic lights?</li>
-                                <li>Which light was on the last traffic light that ego vehicle passed? (red, yellow, green, green arrow, not applicable)</li>
+                                <li>Which light was on the last traffic light that ego vehicle passed? (red, yellow,
+                                    green, green arrow, not applicable)
+                                </li>
                             </ul>
                         </details>
 
@@ -421,7 +500,9 @@
                                 <li>Are there any pedestrians on the crosswalk or the road?</li>
                                 <li>Are there any pedestrians moving/walking?</li>
                                 <li>Are there any pedestrians on the path of the ego vehicle?</li>
-                                <li>Are there any objects other than cars, cyclists, or pedestrians on the path of the ego vehicle?</li>
+                                <li>Are there any objects other than cars, cyclists, or pedestrians on the path of the
+                                    ego vehicle?
+                                </li>
                                 <li>Are there any moving objects other than cars, cyclists, or pedestrians?</li>
                                 <li>Is the ego vehicle inside the school zone?</li>
                                 <li>Are there any emergency vehicles?</li>
@@ -431,7 +512,9 @@
                                 <li>Are there any construction vehicles?</li>
                                 <li>Are there any passenger buses?</li>
                                 <li>Are there any trucks?</li>
-                                <li>Are there any trucks or tractor-and-trailers significantly slower in velocity or acceleration than other traffics?</li>
+                                <li>Are there any trucks or tractor-and-trailers significantly slower in velocity or
+                                    acceleration than other traffics?
+                                </li>
                                 <li>Does the ego vehicle accelerate over time?</li>
                                 <li>Does the ego vehicle decelerate over time?</li>
                                 <li>Does any vehicle near the ego vehicle accelerate over time?</li>
@@ -440,9 +523,16 @@
                                 <li>Does any vehicle near the ego vehicle decelerate in a reckless manner?</li>
                                 <li>Does any vehicle near the ego vehicle change lanes in a reckless manner?</li>
                                 <li>Are there any moving vehicles within two car lengths from the ego vehicle?</li>
-                                <li>Is there a potential for collision between the ego vehicle and any other object in the scene? Answer yes if there is more than 0% of chance. (yes with another car or cyclist, yes with pedestrians, yes with static objects, no)</li>
-                                <li>Is it safe for the ego vehicle to lane change left? Is there enough space in the left lane for the ego vehicle?</li>
-                                <li>Is it safe for the ego vehicle to lane change right? Is there enough space in the right lane for the ego vehicle?</li>
+                                <li>Is there a potential for collision between the ego vehicle and any other object in
+                                    the scene? Answer yes if there is more than 0% of chance. (yes with another car or
+                                    cyclist, yes with pedestrians, yes with static objects, no)
+                                </li>
+                                <li>Is it safe for the ego vehicle to lane change left? Is there enough space in the
+                                    left lane for the ego vehicle?
+                                </li>
+                                <li>Is it safe for the ego vehicle to lane change right? Is there enough space in the
+                                    right lane for the ego vehicle?
+                                </li>
                             </ul>
                         </details>
 
@@ -460,10 +550,6 @@
                     </details>
 
                 </div>
-
-
-
-
 
 
             </div>
