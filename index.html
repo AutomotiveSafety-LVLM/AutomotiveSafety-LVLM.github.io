@@ -214,18 +214,23 @@
                     <center>
                         <img src="static/images/arch.jpg" alt="Mixed Video-Image Finetuning"
                              class="center-image blend-img-background"/>
+                        <span style="font-size: 1.5rem">&#x1D4AB;:</span> LiDAR-to-Camera Projector; &emsp;  <span style="font-size: 1.5rem">&#x2130;:</span> Vision Encoder; &emsp; <span style="font-size: 1.5rem">&#x1D447;:</span> Text Tokenizer; &emsp; <span style="font-size: 1.25rem"><i>LLM:</i></span> Foundational LLM Decoder
+
                     </center>
+
+                    <br>
                     <div class="level-set has-text-justified">
                         <p>
                             D3VL is a Multimodal Large Language Model (MLLM) framework designed to enhance an autonomous
-                            vehicle's understanding of driving scenes by combining 2D camera images with 3D time-series
-                            data.
+                            vehicle's understanding of driving scenes by combining multimodal (2D + 3D) time series data.
                             By processing 3D data as depth images, D3VL is able to efficiently pass spatial information
                             directly through standard vision encoders.
                             Through fine-tuning, the vision encoder and vision-language projector specifically learn how
                             to effectively encode these depth images,
                             while the backbone LLM learns how to decode them. <br><br>
-                            P: Projection, E: Vision Encoder, T: Text Tokenizer, LM: Foundational LLM Decoder
+                            <!-- P: x1D4AB, E: x2130 T: x1D447,                             -->
+
+
                         </p>
                     </div>
                 </div>
@@ -252,11 +257,10 @@
                         However, most autonomous systems rely on LiDAR-based sensing, and incorporating 3D data has been
                         proven to improve performance in traditional 3D scene perception tasks.
                         This paper presents <i>D3VL</i>, a novel MLLM framework that integrates 2D and 3D time-series
-                        data in a single but simple architecture. The model aims to answer questions %from traffic scene
-                        understanding to safety.
-                        involving traffic scene understanding and safety. <i>D3VL</i> shows an 11% improvement in the
+                        data in a single but simple architecture. The model aims to answer questions from traffic scene
+                        understanding to safety. <i>D3VL</i> shows an 11% improvement in the
                         KITTI Question-Answering (QA) dataset compared to existing methods in processing 2D and 3D
-                        time-series data. This paper further introduces the Waymo QA dataset extension, which assesses
+                        time-series data. This paper further introduces the <i> Waymo QA dataset extension </i>, which assesses
                         models' capabilities in processing 3D and time-series data under diverse driving conditions.
                     </p>
                 </div>
@@ -273,6 +277,70 @@
                 <div class="content">
                     <h2 class="title is-3">KITTI QA</h2>
                 </div>
+
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-video1">
+                        <div class="row" style="margin-bottom: 10rem">
+                            <div class="columns">
+                                <img src="static/images/waymo1.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene1-camera">
+                                <img src="static/images/waymo2.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene1-lidar">
+                            </div>
+                        </div>
+                        <h2 class="subtitle has-text-centered">
+                            Waymo Open Dataset (WOD) features diverse scenes, including rural area.
+                        </h2>
+                        <br>
+                    </div>
+
+                    <div class="item item-video2">
+                        <div class="row" style="margin-bottom: 10rem">
+                            <div class="columns">
+                                <img src="static/images/waymo3.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene2-camera">
+                                <img src="static/images/waymo4.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene2-lidar">
+                            </div>
+                        </div>
+
+                        <h2 class="subtitle has-text-centered">
+                            Waymo Open Dataset (WOD) features diverse scenes, including raining scenes
+
+                        </h2>
+                    </div>
+                    <div class="item item-video3">
+                        <div class="row" style="margin-bottom: 10rem">
+                            <div class="columns">
+                                <img src="static/images/waymo5.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene3-camera">
+                                <img src="static/images/waymo6.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene3-lidar">
+                            </div>
+                        </div>
+                        <h2 class="subtitle has-text-centered">
+                            Waymo Open Dataset (WOD) features diverse scenes, including complex urban scenes
+                        </h2>
+                    </div>
+
+                    <div class="item item-video4">
+                        <div class="row" style="margin-bottom: 10rem">
+                            <div class="columns">
+                                <img src="static/images/waymo7.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene4-camera">
+                                <img src="static/images/waymo8.png" style="width:47%; margin-left: 1%; margin-right: 1%"
+                                     alt="scene4-lidar">
+                            </div>
+                        </div>
+                        <h2 class="subtitle has-text-centered">
+                            Waymo Open Dataset (WOD) features diverse scenes, including complex night scenes.
+                        </h2>
+                    </div>
+                </div>
+
+
+
+
                 <div class="content">
                     <!--KITTI Questions-->
                     <details style="line-height: 1.5">
@@ -433,6 +501,12 @@
 
                 <!-- End Subject Driven Video Generation carousel -->
                 <br>
+                <div class="content">
+                    <p>
+                        @misc{waymo_open_dataset, title = {Waymo Open Dataset: An autonomous driving dataset}, website = {\url{https://www.waymo.com/open}}, year = {2019-2025} }
+                    </p>
+                </div>
+
                 <div class="content">
                     <details style="line-height: 1.5">
                         <summary><b>See list of the question-answer pairs</b></summary>
