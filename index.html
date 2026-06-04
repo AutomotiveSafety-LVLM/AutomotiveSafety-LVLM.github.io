@@ -280,7 +280,7 @@
                             </div>
                         </div>
                         <h2 class="subtitle has-text-centered">
-                            KITTI QA is based on stereo camera in KITTI tracking dataset. We use BridgeDepth to render 3D depth map from stereo.
+                            KITTI QA benchmark model's ability to understand multimodal traffic scenes and make safe driving decisions
                         </h2>
                         <br>
                     </div>
@@ -294,7 +294,7 @@
                             </div>
                         </div>
                         <h2 class="subtitle has-text-centered">
-                            KITTI QA includes 40 handcrafted questions related to traffic scene understanding and safety.
+                            KITTI QA is based on KITTI object tracking dataset including camera and stereo camera sensor. KITTI has been loved by a lot of researchers since 2013
                         </h2>
                     </div>
                     <div class="item item-video3">
@@ -307,7 +307,7 @@
                             </div>
                         </div>
                         <h2 class="subtitle has-text-centered">
-                            Using 3D data in D3VL enhances models' capability on answering certain questions.
+                            We generate 3D RGBD images with state of the art stereo depth estimation model "BridgeDepth."
                         </h2>
                     </div>
                     <div class="item item-video4">
@@ -320,7 +320,7 @@
                             </div>
                         </div>
                         <h2 class="subtitle has-text-centered">
-
+                            KITTI-QA contains 21 training scenes and 27 testing scenes. Each scene is couple second long to 2 minute long. Model should be able to handle
                         </h2>
                     </div>
                 </div>
@@ -487,7 +487,6 @@
                 <br>
                 <div class="content">
                     <p>
-                        @misc{waymo_open_dataset, title = {Waymo Open Dataset: An autonomous driving dataset}, website = {\url{https://www.waymo.com/open}}, year = {2019-2025} }
                     </p>
                 </div>
 
@@ -627,7 +626,20 @@
                     <img src="static/images/kitti-benchmark.svg" width="100%" height="auto" alt="kitti-table"
                          class="center-image"/>
                     <h2 class="title is-5">Waymo-QA</h2>
-                    <img src="static/images/waymo-benchmark.svg" width="100%" height="auto" alt="waymo-table" class="columns"/>
+                    <img src="static/images/waymo-benchmark.svg" width="100%" height="auto" alt="waymo-table"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <h2 class="title is-3">Reference</h2>
+                    <p>[1] @misc{waymo_open_dataset, title = {Waymo Open Dataset: An autonomous driving dataset}, website = {\url{https://www.waymo.com/open}}, year = {2019-2025} }</p>
+                    <p>[2] @article{guan2025bridgedepth, author = {Guan, Tongfan and Guo, Jiaxin and Wang, Chen and Liu, Yun-Hui}, title     = {BridgeDepth: Bridging Monocular and Stereo Reasoning with Latent Alignment}, booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, month     = {October}, year      = {2025}, pages     = {27681-27691}}</p>
             </div>
         </div>
     </div>
@@ -998,3 +1010,4 @@ https://dreamix-video-editing.github.io -->
 </body>
 
 </html>
+
