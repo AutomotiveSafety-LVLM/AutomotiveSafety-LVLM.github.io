@@ -2,6 +2,11 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .footer .icon-link {
     font-size: 25px;
@@ -137,5 +142,59 @@ body {
 
 .blend-img-background {
     mix-blend-mode: multiply;
+}
+
+.publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.link-block {
+    display: inline-block;
+}
+
+.diagram-legend {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.legend-symbol {
+    font-size: 1.5rem;
+}
+
+.legend-symbol--small {
+    font-size: 1.25rem;
+}
+
+.image-row {
+    margin-bottom: 2.5rem;
+}
+
+.carousel-image {
+    width: 47%;
+    margin: 0 1%;
+}
+
+.qa-details {
+    line-height: 1.5;
+}
+
+.qa-subdetails {
+    margin: 0 0 1rem 1rem;
+}
+
+.qa-list {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-image {
+        width: 100%;
+        margin: 0 0 1rem;
+    }
 }
 
