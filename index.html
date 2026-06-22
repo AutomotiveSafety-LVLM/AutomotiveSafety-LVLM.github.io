@@ -282,8 +282,7 @@
                             </div>
                         </div>
                         <h2 class="subtitle has-text-centered">
-                            KITTI QA benchmark model's ability to understand multimodal traffic scenes and make safe
-                            driving decisions
+                            KITTI-QA is a multimodal (2D + 3D) video question-answering benchmark for spatio-temporal reasoning in autonomous driving.
                         </h2>
                         <br>
                     </div>
@@ -295,8 +294,7 @@
                             </div>
                         </div>
                         <h2 class="subtitle has-text-centered">
-                            KITTI QA is based on KITTI object tracking dataset including camera and stereo camera
-                            sensor. KITTI has been loved by a lot of researchers since 2013
+                            Derived from the KITTI tracking dataset [1], it comprises 21 training and 29 testing scenes, with 3D depth maps generated via BridgeDepth [2].
                         </h2>
                     </div>
                     <div class="item item-video3">
@@ -307,8 +305,7 @@
                             </div>
                         </div>
                         <h2 class="subtitle has-text-centered">
-                            We generate 3D RGBD images with state of the art stereo depth estimation model
-                            "BridgeDepth."
+                            Each scene features 40 safety-centric, handcrafted QA pairs that require models to integrate temporal dynamics with traffic safety knowledge.
                         </h2>
                     </div>
                     <div class="item item-video4">
@@ -319,8 +316,7 @@
                             </div>
                         </div>
                         <h2 class="subtitle has-text-centered">
-                            KITTI-QA contains 21 training scenes and 27 testing scenes. Each scene is couple second long
-                            to 2 minute long. Model should be able to handle
+                            Each scene has variable length of 3 seconds to 1 minute with rich temporal context, and all scenes have both 2D and 3D data.
                         </h2>
                     </div>
                 </div>
@@ -434,7 +430,7 @@
                             </div>
                         </div>
                         <h2 class="subtitle has-text-centered">
-                            Waymo Open Dataset (WOD) features diverse scenes, including rural area.
+                            WaymoQA is a multimodal (2D + 3D) video question-answering dataset extension based of Waymo Open Dataset (WOD) [3].
                         </h2>
                         <br>
                     </div>
@@ -450,8 +446,7 @@
                         </div>
 
                         <h2 class="subtitle has-text-centered">
-                            Waymo Open Dataset (WOD) features diverse scenes, including raining scenes
-
+                            WOD features diverse driving conditions, including adverse weather, nighttime, rural, and downtown rush-hours.
                         </h2>
                     </div>
                     <div class="item item-video3">
@@ -464,7 +459,7 @@
                             </div>
                         </div>
                         <h2 class="subtitle has-text-centered">
-                            Waymo Open Dataset (WOD) features diverse scenes, including complex urban scenes
+                            WOD includes LiDAR PointCloud then projected into camera space to generate 3D depth maps.
                         </h2>
                     </div>
 
@@ -478,7 +473,7 @@
                             </div>
                         </div>
                         <h2 class="subtitle has-text-centered">
-                            Waymo Open Dataset (WOD) features diverse scenes, including complex night scenes.
+                            All scenes are 20-seconds long with rich temporal contexts, and questions are designed to assess 3D data processing capabilities.
                         </h2>
                     </div>
                 </div>
@@ -638,12 +633,9 @@
             <div class="column is-full">
                 <div class="content">
                     <h2 class="title is-3">Reference</h2>
-                    <p>[1] @misc{waymo_open_dataset, title = {Waymo Open Dataset: An autonomous driving dataset},
-                        website = {\url{https://www.waymo.com/open}}, year = {2019-2025} }</p>
-                    <p>[2] @article{guan2025bridgedepth, author = {Guan, Tongfan and Guo, Jiaxin and Wang, Chen and Liu,
-                        Yun-Hui}, title = {BridgeDepth: Bridging Monocular and Stereo Reasoning with Latent Alignment},
-                        booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-                        month = {October}, year = {2025}, pages = {27681-27691}}</p>
+                    <p>[1] A. Geiger, P. Lenz, C. Stiller, and R. Urtasun, 'Vision meets Robotics: The KITTI Dataset', International Journal of Robotics Research (IJRR), 2013. </p>
+                    <p>[2] T. Guan, J. Guo, C. Wang, and Y.-H. Liu, 'BridgeDepth: Bridging Monocular and Stereo Reasoning with Latent Alignment', pp. 27681–27691, Oct. 2025.</p>
+                    <p>[3] 'Waymo Open Dataset: An autonomous driving dataset'. 2019-2025. </p>
                 </div>
             </div>
         </div>
